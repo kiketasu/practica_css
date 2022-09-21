@@ -51,6 +51,11 @@ a {
   justify-content: space-between;
 }
 
+.pestañas a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 .pestañas div {
   padding: 0 20px;
 }
@@ -73,7 +78,7 @@ header {
 main {
   display: flex;
   justify-content: space-evenly;
-} 
+}
 
 .profile {
   background-color: rgba(255, 255, 255, 0.759);
@@ -93,16 +98,16 @@ main {
   margin-left: 15px;
 }
 
-.profile{
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-background-color: rgba(55, 105, 240, 0.678);
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgba(55, 105, 240, 0.678);
 }
 
-.user-info{
-display: flex;
-justify-content: space-evenly;
+.user-info {
+  display: flex;
+  justify-content: space-evenly;
 }
 .picture {
   border-radius: 50%;
@@ -122,11 +127,11 @@ justify-content: space-evenly;
 
 .iconos {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   width: 462px;
 }
 
-.botones2{
+.botones2 {
   display: flex;
   justify-content: space-around;
   padding-top: 261px;
@@ -137,7 +142,7 @@ justify-content: space-evenly;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   color: auto;
-  font-weight:bold;
+  font-weight: bold;
   border-radius: 10px;
   width: 100px;
   height: 50px;
@@ -151,6 +156,7 @@ justify-content: space-evenly;
   padding-bottom: 10px;
   height: 95%;
 }
+
 .grid-item {
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid rgba(0, 0, 0, 0);
@@ -161,4 +167,58 @@ justify-content: space-evenly;
 
 .grid-item > img {
   width: 100%;
+}
+
+/* ----------------------------------MEDIA PARA 600PX------------------------------------ */
+@media screen and (max-width: 600px) {
+  .buscador {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pestañas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }

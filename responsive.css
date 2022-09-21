@@ -87,8 +87,78 @@ main {
 .galeria {
   background-color: rgba(255, 255, 255, 0.758);
   width: 1000px;
-  height: 700px;
+  height: 800px;
   margin: -20px;
   border-radius: 10px;
   margin-left: 15px;
+}
+
+.profile{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+background-color: rgba(55, 105, 240, 0.678);
+}
+
+.user-info{
+display: flex;
+justify-content: space-evenly;
+}
+.picture {
+  border-radius: 50%;
+  width: 200px;
+  padding-top: 10px;
+}
+
+.user {
+  padding-left: 20px;
+  padding-top: 90px;
+  font-size: 30px;
+}
+
+.description {
+  padding-left: 20px;
+}
+
+.iconos {
+  display: flex;
+  justify-content:space-between;
+  width: 462px;
+}
+
+.botones2{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 261px;
+}
+
+.boton3 {
+  background-color: aliceblue;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: auto;
+  font-weight:bold;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2195f300;
+  padding: 10px;
+  padding-bottom: 10px;
+  height: 95%;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-item > img {
+  width: 100%;
 }
